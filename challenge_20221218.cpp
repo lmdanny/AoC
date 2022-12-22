@@ -1,3 +1,10 @@
+/*
+ *  CHALLENGE 2022-12-18
+ *  Puzzle source: https://adventofcode.com/
+ *  Solution: Danny van der Meeren <danny@illogic.nl>
+ *  License: Free to use without limitations
+ */
+
 #include <iostream>
 #include <fstream>
 #include <sstream>

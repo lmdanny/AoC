@@ -1,3 +1,10 @@
+/*
+ *  CHALLENGE 2022-12-20
+ *  Puzzle source: https://adventofcode.com/
+ *  Solution: Danny van der Meeren <danny@illogic.nl>
+ *  License: Free to use without limitations
+ */
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -9,7 +16,6 @@ using namespace std;
 struct tpl_t
 {
     long long val;
-    int pos;
     tpl_t *next;
     tpl_t *prev;
 };
@@ -96,9 +102,7 @@ void load (const string &fname, long long key) {
     ifstream ifs (fname);
 
     while ( ifs >> d ) {
-        msg[msg_sz].pos = msg_sz;
         msg[msg_sz].val = ( d * key );
-
         msg[msg_sz].next = &msg[msg_sz+1];
         msg[msg_sz+1].prev = &msg[msg_sz];
 
